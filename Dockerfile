@@ -13,7 +13,7 @@ ADD . .
 RUN make build
 
 # create application container for amd64
-FROM ubuntu
+FROM ubuntu:kinetic-20220830
 
 RUN apt-get update && apt-get install -y ca-certificates && rm -rf /var/lib/apt/lists/*
 
